@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will You Be My Valentine? 💝</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── MAIN SCREEN ── -->
+  <main id="main-screen" role="main" aria-label="Valentine's question">
+
+    <div class="card" id="question-card">
+
+      <div class="gif-wrap" aria-hidden="true">
+        <img
+          id="main-gif"
+          src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW9uZmtyaGVkNzBucDQydDhmbXZ5OGhxaThieTJsZmo5NDBiNzBkbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MDJ9IbxxvDUQM/giphy.gif"
+          alt="Cute animated bear holding a heart"
+          width="220"
+          height="220"
+        />
+      </div>
+
+      <h1 id="question-title">
+        Will you be my Valentine?&nbsp;<span class="kaomoji" aria-hidden="true">(°□°)!!</span>
+      </h1>
+
+      <div class="btn-row" role="group" aria-label="Answer buttons">
+        <button
+          id="yes-btn"
+          class="btn btn-yes"
+          aria-label="Yes, I will be your Valentine"
+        >YES 💖</button>
+
+        <button
+          id="no-btn"
+          class="btn btn-no"
+          aria-label="No button — try to catch it!"
+        >No</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ── YES SCREEN ── -->
+  <section
+    id="yes-screen"
+    class="hidden"
+    role="region"
+    aria-label="Valentine accepted"
+    aria-live="polite"
+  >
+    <div class="yes-card" id="yes-card">
+      <img
+        id="yes-gif"
+        src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWV3aHVrZGNtMmg1bHpybGZ3bDY2bThramFtNXpxbGR5dXZuM3ppbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26DMTEijJDDzJEtri/giphy.gif"
+        alt="Happy celebration animation"
+        width="280"
+        height="280"
+      />
+      <p class="yes-msg">I knew you'd say YES ❤️</p>
+    </div>
+  </section>
+
+  <!-- Canvas for confetti -->
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+  <!-- Heart container -->
+  <div id="hearts-container" aria-hidden="true"></div>
+
+  <!-- Sparkle container -->
+  <div id="sparkles-container" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
